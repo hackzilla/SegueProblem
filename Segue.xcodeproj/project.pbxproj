@@ -16,6 +16,7 @@
 		D03323941A154D6A00D8E5BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03323931A154D6A00D8E5BE /* Images.xcassets */; };
 		D03323971A154D6A00D8E5BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03323951A154D6A00D8E5BE /* LaunchScreen.xib */; };
 		D03323A31A154D6A00D8E5BE /* SegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03323A21A154D6A00D8E5BE /* SegueTests.m */; };
+		D03323AE1A154E1800D8E5BE /* NewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03323AD1A154E1800D8E5BE /* NewDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		D033239C1A154D6A00D8E5BE /* SegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03323A11A154D6A00D8E5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03323A21A154D6A00D8E5BE /* SegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegueTests.m; sourceTree = "<group>"; };
+		D03323AC1A154E1800D8E5BE /* NewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetailViewController.h; sourceTree = "<group>"; };
+		D03323AD1A154E1800D8E5BE /* NewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				D03323951A154D6A00D8E5BE /* LaunchScreen.xib */,
 				D03323871A154D6A00D8E5BE /* Segue.xcdatamodeld */,
 				D03323801A154D6A00D8E5BE /* Supporting Files */,
+				D03323AC1A154E1800D8E5BE /* NewDetailViewController.h */,
+				D03323AD1A154E1800D8E5BE /* NewDetailViewController.m */,
 			);
 			path = Segue;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				D033238C1A154D6A00D8E5BE /* MasterViewController.m in Sources */,
 				D03323861A154D6A00D8E5BE /* AppDelegate.m in Sources */,
 				D03323831A154D6A00D8E5BE /* main.m in Sources */,
+				D03323AE1A154E1800D8E5BE /* NewDetailViewController.m in Sources */,
 				D03323891A154D6A00D8E5BE /* Segue.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
