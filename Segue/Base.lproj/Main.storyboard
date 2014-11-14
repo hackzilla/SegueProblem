@@ -109,7 +109,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
                     <connections>
-                        <segue destination="hly-vo-c7w" kind="showDetail" identifier="showAdd" id="Vbu-uj-dnW"/>
+                        <segue destination="hly-vo-c7w" kind="show" identifier="showAdd" id="Vbu-uj-dnW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
