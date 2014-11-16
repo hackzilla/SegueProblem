@@ -109,45 +109,65 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
                     <connections>
-                        <segue destination="hly-vo-c7w" kind="show" identifier="showAdd" id="Vbu-uj-dnW"/>
+                        <segue destination="QDg-jt-zL0" kind="presentation" identifier="showAdd" id="3zK-Cq-WZd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
         </scene>
-        <!--New Detail View Controller-->
-        <scene sceneID="RcB-9e-N9k">
+        <!--Add-->
+        <scene sceneID="gm2-IG-Rqf">
             <objects>
-                <viewController storyboardIdentifier="newDetail" id="hly-vo-c7w" customClass="NewDetailViewController" sceneMemberID="viewController">
+                <viewController title="Add" id="iwa-ae-TEf" customClass="NewDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nl9-Xl-zBR"/>
-                        <viewControllerLayoutGuide type="bottom" id="eiv-T7-RN5"/>
+                        <viewControllerLayoutGuide type="top" id="aou-ci-ZM2"/>
+                        <viewControllerLayoutGuide type="bottom" id="i3P-JJ-ti1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VKX-Hx-R4c">
+                    <view key="view" contentMode="scaleToFill" id="C7I-N1-u8u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEc-Ep-2Om">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcQ-vF-EG4">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Create">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="create:" destination="hly-vo-c7w" eventType="touchUpInside" id="AKP-e4-csh"/>
+                                    <action selector="create:" destination="iwa-ae-TEf" eventType="touchUpInside" id="hGO-Fg-b8n"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aEc-Ep-2Om" firstAttribute="centerY" secondItem="VKX-Hx-R4c" secondAttribute="centerY" id="au3-Gg-8bV"/>
-                            <constraint firstItem="aEc-Ep-2Om" firstAttribute="centerX" secondItem="VKX-Hx-R4c" secondAttribute="centerX" id="uXa-mc-0cb"/>
+                            <constraint firstItem="ZcQ-vF-EG4" firstAttribute="centerY" secondItem="C7I-N1-u8u" secondAttribute="centerY" id="7dd-4y-9rT"/>
+                            <constraint firstItem="ZcQ-vF-EG4" firstAttribute="centerX" secondItem="C7I-N1-u8u" secondAttribute="centerX" id="JMl-2h-Z7k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="9O3-Rx-QCD" kind="unwind" identifier="return" unwindAction="displayNewObject:" id="NVU-Mv-E5f"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fer-Dz-gwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTD-md-dWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9O3-Rx-QCD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="-630"/>
+            <point key="canvasLocation" x="2212" y="-630"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="13h-u7-bky">
+            <objects>
+                <navigationController id="QDg-jt-zL0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X08-I7-yEA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iwa-ae-TEf" kind="relationship" relationship="rootViewController" id="vJT-wU-SkU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mE0-yD-Mek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="-630"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">

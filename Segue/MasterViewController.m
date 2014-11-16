@@ -72,17 +72,10 @@
         [controller setDetailItem:object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
-    } else if ([[segue identifier] isEqualToString:@"showAdd"]) {
-        //segue.destinationViewController
-        //    ScannerViewController *controller = (ScannerViewController *)[segue destinationViewController];
-        [segue.destinationViewController setReturnController:self];
     }
 }
 
-- (void)displayNewObject {
-    [self.navigationController popToRootViewControllerAnimated:NO];
-    //[self.navigationController popViewControllerAnimated:NO];
-    
+- (IBAction)displayNewObject:(UIStoryboardSegue *)segue {
     NSIndexPath* selectedCellIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView selectRowAtIndexPath:selectedCellIndexPath animated:false scrollPosition:UITableViewScrollPositionMiddle];
     [self performSegueWithIdentifier: @"showDetail" sender:[self.tableView cellForRowAtIndexPath:selectedCellIndexPath]];

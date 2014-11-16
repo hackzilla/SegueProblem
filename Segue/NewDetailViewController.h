@@ -11,10 +11,8 @@
 
 @interface NewDetailViewController : UIViewController
 
-@property (strong, nonatomic) MasterViewController *targetController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)create:(id)sender;
-- (void)setReturnController:(MasterViewController *) controller;
 
 @end

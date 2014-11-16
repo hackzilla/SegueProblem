@@ -430,6 +430,7 @@
 				D03323A81A154D6A00D8E5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D03323A91A154D6A00D8E5BE /* Build configuration list for PBXNativeTarget "SegueTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				D03323AB1A154D6A00D8E5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
