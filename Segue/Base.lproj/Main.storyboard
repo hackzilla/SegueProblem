@@ -47,12 +47,20 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="dit-dP-IeV">
+                            <connections>
+                                <action selector="done:" destination="JEX-9P-axG" id="8HL-Cg-MPU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <segue destination="GbR-XM-w8x" kind="unwind" identifier="returnToRoot" unwindAction="returnToRoot:" id="pBg-kE-s9P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+                <exit id="GbR-XM-w8x" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="709" y="129"/>
         </scene>
@@ -145,7 +153,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="9O3-Rx-QCD" kind="unwind" identifier="return" unwindAction="displayNewObject:" id="NVU-Mv-E5f"/>
+                        <segue destination="JEX-9P-axG" kind="show" identifier="showAddDetail" id="kL7-nK-bbN"/>
+                        <segue destination="9O3-Rx-QCD" kind="unwind" identifier="returnToRoot" unwindAction="returnToRoot:" id="luq-LJ-bHR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTD-md-dWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,6 +195,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
+        <segue reference="kL7-nK-bbN"/>
     </inferredMetricsTieBreakers>
 </document>

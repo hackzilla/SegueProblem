@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DetailViewController.h"
 #import "NewDetailViewController.h"
 #import "MasterViewController.h"
 
@@ -15,6 +16,21 @@
 @end
 
 @implementation NewDetailViewController
+
+NSManagedObject *detailItem;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(returnToRoot:)];
+    self.navigationItem.leftBarButtonItem = cancelButton;
+}
+
+- (void)returnToRoot:(id)sender {
+    [self performSegueWithIdentifier: @"returnToRoot" sender: self];
+}
 
 - (IBAction)create:(id)sender
 {
@@ -41,8 +57,15 @@
     }
     
     NSLog(@"Will return to step one.");
-    
-    [self performSegueWithIdentifier: @"return" sender:self];
+    detailItem = newManagedObject;
+    [self performSegueWithIdentifier: @"showAddDetail" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showAddDetail"]) {
+        DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
+        [controller setDetailItem:detailItem];
+    }
 }
 
 @end

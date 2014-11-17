@@ -18,5 +18,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+- (IBAction)returnToRoot:(UIStoryboardSegue *)segue;
+
 @end
 

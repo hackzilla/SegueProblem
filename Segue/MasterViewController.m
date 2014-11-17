@@ -81,6 +81,9 @@
     [self performSegueWithIdentifier: @"showDetail" sender:[self.tableView cellForRowAtIndexPath:selectedCellIndexPath]];
 }
 
+- (IBAction)returnToRoot:(UIStoryboardSegue *)segue {
+}
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
