@@ -13,6 +13,4 @@
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
-- (IBAction)create:(id)sender;
-
 @end
